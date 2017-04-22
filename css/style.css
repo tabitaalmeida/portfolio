@@ -1,0 +1,14 @@
+body {
+	border:15px solid #ec5e4d;
+	margin:0;
+	padding: 0;
+	height: 100vh;
+	background: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+header .menu li{
+	display: inline-block;
+	padding:;
+}
