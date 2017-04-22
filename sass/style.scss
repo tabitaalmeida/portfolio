@@ -24,7 +24,7 @@ $form-group-margin-bottom: 30px !default;
 
 
 // Mixin
-@mixin fh5co-translateX($translatex) {
+@mixin tb-translateX($translatex) {
 	-moz-transform: translateX($translatex);
 	-webkit-transform: translateX($translatex);
 	-ms-transform: translateX($translatex);
@@ -122,7 +122,7 @@ body {
 	color: #848484;
 	font-weight: 300;
 	overflow-x: hidden;
-	&.fh5co-offcanvas {
+	&.tb-offcanvas {
 		overflow: hidden;
 	}
 }
@@ -169,10 +169,10 @@ figure {
   background: $brand-selection-color;
 }
 
-#fh5co-header {
+#tb-header {
 	padding-top: 40px;
 	margin-bottom: 30px;
-	#fh5co-logo {
+	#tb-logo {
 		img {
 			max-width: 100%;
 		}
@@ -214,8 +214,8 @@ figure {
 
 
 
-.fh5co-projects-feed, .footer-content { margin: 0 auto; max-width: 1400px; }
-.fh5co-projects-feed  .fh5co-project {
+.tb-projects-feed, .footer-content { margin: 0 auto; max-width: 1400px; }
+.tb-projects-feed  .tb-project {
 	float: left;
 	margin: 20px 20px 20px;
 	width: 290px;
@@ -289,7 +289,7 @@ figure {
 	}
 }
 
-#fh5co-footer {
+#tb-footer {
 	float: left;
 	width: 100%;
 	background: lighten($brand-black, 92%);

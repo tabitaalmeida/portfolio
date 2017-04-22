@@ -2,11 +2,11 @@
 	"use strict";
 
 	$(window).load(function() {
-		var $container = $('#fh5co-projects-feed'),
+		var $container = $('#tb-projects-feed'),
 		containerWidth = $container.outerWidth();
 
 		$container.masonry({
-			itemSelector : '.fh5co-project',
+			itemSelector : '.tb-project',
 			columnWidth: function( containerWidth ) {
 				if( containerWidth <= 330 ) {
 					return 310;

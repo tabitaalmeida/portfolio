@@ -20,7 +20,7 @@ body {
   font-weight: 300;
   overflow-x: hidden;
 }
-body.fh5co-offcanvas {
+body.tb-offcanvas {
   overflow: hidden;
 }
 
@@ -71,21 +71,21 @@ figure {
   background: #2da9d7;
 }
 
-#fh5co-header {
+#tb-header {
   padding-top: 40px;
   margin-bottom: 30px;
 }
-#fh5co-header #fh5co-logo img {
+#tb-header #tb-logo img {
   max-width: 100%;
 }
-#fh5co-header nav {
+#tb-header nav {
   padding-top: 20px;
 }
-#fh5co-header nav ul {
+#tb-header nav ul {
   padding: 0;
   margin: 0;
 }
-#fh5co-header nav ul li {
+#tb-header nav ul li {
   padding: 0;
   margin: 0;
   display: -moz-inline-stack;
@@ -95,55 +95,55 @@ figure {
   list-style: none;
   font-size: 15px;
 }
-#fh5co-header nav ul li a {
+#tb-header nav ul li a {
   color: #999999 !important;
   padding: 10px;
 }
 @media screen and (max-width: 480px) {
-  #fh5co-header nav ul li a {
+  #tb-header nav ul li a {
     padding: 5px;
   }
 }
-#fh5co-header nav ul li a:hover, #fh5co-header nav ul li a:active, #fh5co-header nav ul li a:focus {
+#tb-header nav ul li a:hover, #tb-header nav ul li a:active, #tb-header nav ul li a:focus {
   color: #000 !important;
   text-decoration: none;
   outline: none;
 }
-#fh5co-header nav ul li.active a {
+#tb-header nav ul li.active a {
   text-decoration: line-through !important;
   color: black !important;
 }
 
-.fh5co-projects-feed, .footer-content {
+.tb-projects-feed, .footer-content {
   margin: 0 auto;
   max-width: 1400px;
 }
 
-.fh5co-projects-feed .fh5co-project {
+.tb-projects-feed .tb-project {
   float: left;
   margin: 20px 20px 20px;
   width: 290px;
 }
 @media screen and (max-width: 480px) {
-  .fh5co-projects-feed .fh5co-project {
+  .tb-projects-feed .tb-project {
     margin: 10px 10px 10px;
   }
 }
-.fh5co-projects-feed .fh5co-project > a {
+.tb-projects-feed .tb-project > a {
   display: block;
   text-align: center;
 }
-.fh5co-projects-feed .fh5co-project > a img {
+.tb-projects-feed .tb-project > a img {
   margin-bottom: 30px;
 }
-.fh5co-projects-feed .fh5co-project > a h2 {
+.tb-projects-feed .tb-project > a h2 {
   font-size: 14px;
   color: #999999;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-.fh5co-projects-feed .fh5co-project > a:hover h2, .fh5co-projects-feed .fh5co-project > a:active h2, .fh5co-projects-feed .fh5co-project > a:focus h2 {
+.tb-projects-feed .tb-project > a:hover h2, .tb-projects-feed .tb-project > a:active h2, .tb-projects-feed .tb-project > a:focus h2 {
   color: #000;
 }
 
@@ -201,7 +201,7 @@ figure {
   }
 }
 
-#fh5co-footer {
+#tb-footer {
   float: left;
   width: 100%;
   background: #ebebeb;
@@ -210,25 +210,25 @@ figure {
   text-align: center;
   color: #999999;
 }
-#fh5co-footer a {
+#tb-footer a {
   color: #bfbfbf;
 }
-#fh5co-footer a:hover, #fh5co-footer a:active, #fh5co-footer a:focus {
+#tb-footer a:hover, #tb-footer a:active, #tb-footer a:focus {
   color: #000 !important;
 }
-#fh5co-footer .social {
+#tb-footer .social {
   margin-top: 20px;
 }
-#fh5co-footer .social a {
+#tb-footer .social a {
   padding: 10px;
   color: #999999 !important;
 }
 @media screen and (max-width: 480px) {
-  #fh5co-footer .social a {
+  #tb-footer .social a {
     padding: 5px;
   }
 }
-#fh5co-footer .social a:hover, #fh5co-footer .social a:active, #fh5co-footer .social a:focus {
+#tb-footer .social a:hover, #tb-footer .social a:active, #tb-footer .social a:focus {
   color: #000 !important;
 }
 
