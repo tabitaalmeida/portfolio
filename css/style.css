@@ -10,6 +10,10 @@ body {
 	
 }
 
+.border {
+	border-left: 50px solid #FFF;
+}
+
 
 
 header nav {
@@ -74,7 +78,7 @@ header nav ul li a:hover {
   position: fixed;
   z-index: 10;
   right: 10px;
-  top: 10px;
+  top: 45vh;
   cursor: pointer;
   padding:15px;
   border:1px solid #FF5F6D;
@@ -90,6 +94,11 @@ background: linear-gradient(to top, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Fir
 
 }
 
+.toggle-btn:hover .bar:nth-child(2) {
+	width: 20px;
+	margin: 3px auto;
+}
+
 
 .toggle-btn .bar {
   width: 20px;
@@ -102,6 +111,11 @@ background: linear-gradient(to top, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Fir
 
 .toggle-btn .bar:nth-child(1) {
 	margin-top: 7px;
+}
+
+.toggle-btn .bar:nth-child(2) {
+	width: 15px;
+    margin: 3px 9px;
 }
 
 #toggle:checked ~ nav {
@@ -182,12 +196,12 @@ section#main h1 {
 
 
 .page1 {
-    margin: 30px;
     display: grid;
     grid-gap: 50px 10px;
     grid-template-columns: .125fr 1fr 2fr .5fr .5fr 1.5fr;
     grid-template-areas: " byline header header header spacer image1" " byline header header header spacer image2" " byline text text .... spacer image3" " byline nav nav nav spacer close";
     color: #fff;
+    height: 100vh;
 }
 
 .page1 .byline {
@@ -237,7 +251,163 @@ section#main h1 {
 
 .text {
     grid-area: text;
-    column-count: 3;
-    -moz-column-count: 3;
+    column-count: 2;
+    -moz-column-count: 2;
     z-index: 1;
+}
+
+.block {
+	background: #FFC371;
+	display: block;
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	top: 65vh;
+	left:50%;
+}
+
+#triangle {
+	width: 0;
+    height: 0;
+    border-bottom: 800px solid #FFC371;
+    border-left: 1000px solid transparent;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+section#portfolio {
+	padding: 30px 0;
+	background: #FFC371;
+	top: -17px;
+    position: relative;
+}
+
+footer {
+	    -moz-transform: rotate(-90deg) translateY(0.5em);
+    -ms-transform: rotate(-90deg) translateY(0.5em);
+    -webkit-transform: rotate(-90deg) translateY(0.5em);
+    transform: rotate(-90deg) translateY(0.5em);
+      display: block;
+    position: fixed;
+    top: 50vh;
+    left: -55px;
+}
+
+footer p {
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.container {
+  padding: 20px 40px;
+}
+@media all and (min-width: 545px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.post {
+  background-color: white;
+  margin-bottom: 20px;
+}
+@media all and (min-width: 545px) {
+  .post {
+    margin: 0 20px 30px 20px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 28%;
+            flex: 1 0 28%;
+  }
+}
+.post .post-image {
+  width: 100%;
+  height: auto;
+}
+.post .post-content {
+  padding: 20px 20px 30px 30px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.post .post-title {
+  font-family: "Alegreya Sans SC", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #47495d;
+  color: black;
+}
+.post .post-date {
+  font-family: "Alegreya Sans SC", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+.post .post-abstract {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.post-link {
+  position: relative;
+  border: 3px solid #232323;
+  z-index: 2;
+  padding: 6px 11px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Alegreya Sans SC", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #232323;
+}
+.post-link:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 6px;
+  left: -7px;
+  width: calc(100% + 3px);
+  height: calc(100% + 3px);
+  background-color: #FFC371;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.post-link:hover:before {
+  top: 0;
+  left: 0;
+  width: 102%;
+  height: 100%;
+}
+.post-link::active:before {
+  top: -5px;
+  left: 9px;
+  width: 102%;
+  height: 100%;
 }
