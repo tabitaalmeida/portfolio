@@ -271,6 +271,22 @@ section#page1 {
 	line-height: 1.5;
 }
 
+.work ul {
+	padding-left: 0;
+	list-style: none;
+	text-transform: uppercase;
+	line-height: 1.5;
+}
+
+.work button {
+	background: linear-gradient(135deg, #FF5F6D 0%, #FFC371 100%);
+	border:0;
+	box-shadow: none;
+	padding: 10px;
+	color: #FFF;
+	width: 200px;
+}
+
 /* Hover 1 */
 
 .boton-linea-ext a,
