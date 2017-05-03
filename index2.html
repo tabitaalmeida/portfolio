@@ -16,6 +16,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Chonburi" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rozha+One|Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 	<!-- PLUGINS -->
 	<script src="js/jquery.min.js"></script>
@@ -24,14 +25,17 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors: ['firstPage', 'secondPage', '3rdPage'],
-				sectionsColor: ['#FFC371', '#1BBC9B', '#7E8F7C'],
+				anchors: ['page1', 'page2', 'page3', 'page4'],
+				sectionsColor: ['#1b1a25','#FFF', '#FF5F6D', '#7E8F7C'],
 				navigation: true,
 				navigationPosition: 'right',
-				navigationTooltips: ['First page', 'Second page', 'Third and last page']
+				navigationTooltips: ['Home', 'About Me', 'Projects', 'Services']
 			});
 		});
+
+		
 	</script>
+
 </head>
 
 
@@ -51,7 +55,6 @@
     <nav>
     <ul class="ftr menu">
       <li><a rel="nofollow" rel="noreferrer" href="#home">Home</a></li>
-      <li><a rel="nofollow" rel="noreferrer" href="#about">About me</a></li>
       <li><a rel="nofollow" rel="noreferrer" href="#work">Work</a></li>
       <li><a rel="nofollow" rel="noreferrer" href="#contact">Contact</a></li>
     </ul>
@@ -70,19 +73,18 @@
 
 
 
-<section class="wrap container-fluid">
-	
+<section id="fullpage">
 
-<section id="page1">
+<div class="section">
 	<div class="row">
 	<div class="col-xs-offset-1 col-xs-10">
 
 	  <div class="box header">
     <h1 class="ftr">
-      <span>TABITA</span>
-      <span>ALMEIDA</span>
-      <span>FRONTEND &</span>
-      <span>WEB DESIGNER</span>
+      <span>I AM</span>
+      <span>TÁBITA ALMEIDA</span>
+      <span>A FRONTEND</span>
+      <span>& WEB DESIGNER</span>
     </h1>
   </div>
 
@@ -94,26 +96,57 @@
    
   </div>
 
+
   
 		
 	</div>
 
 
 </div>
-</section>
+</div>
 
-
-
-</section>
-
-<section id="fullpage">
 	<div class="section " id="section0">
 		<div class="intro col-xs-offset-1 col-xs-10">
-			<h1>About me</h1>
-			<p>An easy and beautiful way to navigate throw the sections</p>
+			
+
+			<div class="row">
+				<div class="col-xs-6">
+
+				  <div class="boton-linea-ext">
+    <span class="linea1"></span>
+    <span class="linea2"></span>
+    <span class="linea3"></span>
+    <span class="linea4"></span>
+
+    <div class="work"> <h2>projeto 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, officiis unde deserunt sapiente nesciunt, optio ex voluptas itaque accusamus doloribus sit, voluptatum repellat iste dolore labore tempore quis rem facere!</p>
+				<ul>
+					<li>Projeto:</li>
+					<li>Cliente</li>
+					<li>Agência</li>
+					<li>Função</li>
+				</ul>
+				<button>Ver mais</button> </div>
+   
+  </div>
+
+				
+				</div>
+				<div class="col-xs-6"><img src="https://dummyimage.com/600x400/ff4a26/fff" alt=""></div>
+			</div>
+
+			 
+
+
+  
+
+
+			
+			
 		</div>
 	</div>
 	<div class="section" id="section1">
+	
 	    <div class="slide" id="slide1">
 			<div class="intro">
 				<h1>Clickable</h1>
@@ -127,6 +160,7 @@
 			<h1>Slide 2</h1>
 		</div>
 
+		
 	</div>
 	<div class="section" id="section2">
 		<div class="intro">
