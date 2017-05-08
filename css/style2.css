@@ -102,6 +102,11 @@ body.fp-viewing-page1 div#fp-nav {
   text-transform: uppercase;
 }
 
+.contact h4 {
+  font-style: italic;
+  color:#FFC371;
+}
+
 .contact input {
   background: #FFC371;
   padding:20px;
