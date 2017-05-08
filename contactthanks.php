@@ -29,6 +29,38 @@
 
 <body>
 
+
+
+ <header>
+  <div class="row">
+  
+  <div class="col-xs-offset-3 col-xs-3">
+  	<input type='checkbox' id='toggle' style='display:none;' />
+  <label class='toggle-btn toggle-btn__cross' for='toggle'>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </label>
+    <nav>
+    <ul class="ftr menu">
+      <li><a rel="nofollow" rel="noreferrer" href="#home">Home</a></li>
+      <li><a rel="nofollow" rel="noreferrer" href="#section0">Work</a></li>
+      <li><a rel="nofollow" rel="noreferrer" href="#section3">Contact</a></li>
+    </ul>
+    <ul class="social">
+    	<li><a href="https://www.facebook.com/TabitaAlmeida" target="_blank"><i class="fa fa-facebook"></i></a></li>
+    	<li><a href="https://www.instagram.com/chatapracomr/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+    	<li><a href="https://www.linkedin.com/in/tabitaalmeida" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+    	<li><a href="https://www.behance.net/tabitaalmeida" target="_blank"><i class="fa fa-behance"></i></a></li>
+    </ul>
+  </nav>
+  </div>
+  
+  </div>
+
+</header>
+
+
 	<div id="page-wrap">
 
 			
@@ -39,7 +71,7 @@
 	</div>
 	
 	
-
+<footer class="footer"><p>DESIGNED BY TÁBITA ALMEIDA</p></footer>	
 </body>
 
 </html>
