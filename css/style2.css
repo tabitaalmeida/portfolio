@@ -6,21 +6,119 @@ body {
 }
 
 .ftr {
-	font-family: 'Vidaloka', serif;
+	font-family: 'Playfair Display', serif;
 	
 }
 
-body.fp-viewing-page2 .footer p{
+body.fp-viewing-page2 .footer p, body.fp-viewing-page3 .footer p, body.fp-viewing-page4 .footer p, body.fp-viewing-page5 .footer p{
 	color:#1b1a25 !important;
 }
 
-body.fp-viewing-page2 .toggle-btn .bar {
+body.fp-viewing-page2 .toggle-btn .bar, body.fp-viewing-page3 .toggle-btn .bar, body.fp-viewing-page4 .toggle-btn .bar, body.fp-viewing-page5 .toggle-btn .bar {
 	background: #1b1a25 !important;
 }
 
 body.fp-viewing-page1 div#fp-nav {
 	display: none !important;
 }
+
+.img img{
+
+	width: 1000px;
+}
+
+
+/* Thumbnails */
+.thumb-box {
+  padding: 1.4em 0 1em;
+  margin-left: -1%;
+  width: 102%;
+
+}
+
+.thumbs li {
+	float: left;
+      width: 25%;
+      text-align: center;
+      padding: 0 1%;
+}
+
+.thumbs li img {
+	width: 100%;
+        opacity: .8;
+}
+
+.menu {padding:20vh 0;}
+.menu li {
+	text-transform: uppercase;
+	display: block;
+	font-size: 2.5em;
+}
+
+.social {
+	text-align: center;
+	padding-left: 0;
+}
+
+.social li {
+	display: inline-block;
+	padding-left:15px;
+}
+
+.social li:first-child {
+	padding-left: 0;
+}
+
+.social li a {
+	font-size: 1em;
+}
+
+
+#project-s {
+	padding-top: 20vh;
+	color:#fff;
+}
+
+
+#project-s h1 {
+	text-transform: uppercase;
+    line-height: .9;
+    font-size: 2em;
+    background: linear-gradient(135deg, #FF5F6D 0%, #FFC371 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.contact {
+  color: #1b1a25;
+}
+
+.contact h2{
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.contact input {
+  background: #FFC371;
+  padding:20px;
+  border:5px solid #1b1a25;
+  margin-bottom: 10px;
+}
+
+.contact textarea {
+  background: #FFC371;
+  padding:20px;
+  border:5px solid #1b1a25;
+}
+
+.contact input[type="submit"] {
+  background: #1b1a25;
+  padding: 20px;
+  color:#FFF;
+  width: 100%;
+}
+
 
 header nav {
   background-color: #1b1a25;
@@ -285,6 +383,10 @@ section#page1 {
 	padding: 10px;
 	color: #FFF;
 	width: 200px;
+}
+
+.contact input, .contact textarea {
+	width: 100%;
 }
 
 /* Hover 1 */

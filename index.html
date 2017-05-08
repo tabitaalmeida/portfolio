@@ -11,18 +11,37 @@
 
 	<!-- CSS STYLES -->
 	<link rel="stylesheet" href="css/flexboxgrid.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Chonburi" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Rozha+One|Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 
 	<!-- PLUGINS -->
 	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.pagepiling.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+				sectionsColor: ['#1b1a25','#FFF', '#FFF', '#FFF', '#FF5F6D'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Home', 'Pé com Pé', 'Zoombie Lab', 'Bachema', 'Contact']
+			});
+		});
+
+		
+	</script>
+
 </head>
+
+
 <body>
 
-<div class="border">
 
  <header>
   <div class="row">
@@ -37,15 +56,14 @@
     <nav>
     <ul class="ftr menu">
       <li><a rel="nofollow" rel="noreferrer" href="#home">Home</a></li>
-      <li><a rel="nofollow" rel="noreferrer" href="#about">About me</a></li>
-      <li><a rel="nofollow" rel="noreferrer" href="#work">Work</a></li>
-      <li><a rel="nofollow" rel="noreferrer" href="#contact">Contact</a></li>
+      <li><a rel="nofollow" rel="noreferrer" href="#section0">Work</a></li>
+      <li><a rel="nofollow" rel="noreferrer" href="#section3">Contact</a></li>
     </ul>
     <ul class="social">
-    	<li><a href="">FACEBOOK</a></li>
-    	<li><a href="">INSTAGRAM</a></li>
-    	<li><a href="">LINKEDIN</a></li>
-    	<li><a href="">BEHANCE</a></li>
+    	<li><a href="https://www.facebook.com/TabitaAlmeida" target="_blank"><i class="fa fa-facebook"></i></a></li>
+    	<li><a href="https://www.instagram.com/chatapracomr/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+    	<li><a href="https://www.linkedin.com/in/tabitaalmeida" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+    	<li><a href="https://www.behance.net/tabitaalmeida" target="_blank"><i class="fa fa-behance"></i></a></li>
     </ul>
   </nav>
   </div>
@@ -55,107 +73,199 @@
 </header>
 
 
-<section class="page1">
-  <!--<div class="byline"><p>SÃO PAULO</p></div>-->
-  
-  <div class="box header">
+
+<section id="fullpage">
+
+<div class="section" id="home">
+	<div class="row">
+	<div class="col-xs-offset-1 col-xs-10">
+
+	  <div class="box header">
     <h1 class="ftr">
-      <span>TABITA</span>
-      <span>ALMEIDA</span>
-      <span>FRONTEND &</span>
-      <span>WEB DESIGNER</span>
+      <span>I AM</span>
+      <span>TÁBITA ALMEIDA</span>
+      <span>A FRONTEND</span>
+      <span>& WEB DESIGNER</span>
     </h1>
   </div>
-  
-  
-  
-  <div class="box text">
-    <p>Hi! I am Tábita and I'm a 23 years-old web designer who lives in Brazil. I used to work with graphic design, I tried to switch to front end development but I was missing the creativy part, than, I notice that my place were right there in the middle. I love the arts and I love to see things happening, I love to do what I call, handsome technologies.</p>
+
+
+   <div class="box text">
+    <p><span>Hi!</span> I am Tábita and I'm a 23 years-old web designer who lives in Brazil. I used to work with graphic design, I tried to switch to front end development but I was missing the creativy part, than, I notice that my place were right there in the middle. I love the arts and I love to see things happening, I love to do what I call, handsome technologies.</p>
 
     <p>Speaking about my personal life, I realy want to travel across the world to know countries and there culture, my biggest dream of all is to do a tour visiting and eating in all the best places of the world. While I can't do that, I work. </p>
 
    
   </div>
 
-  <div id="triangle"></div>
+
   
-
-</section>
-<section id="portfolio" class="container-fluid"> 
-<!--<div class="row">
-	<div class="container">
-	<article class="post">
-		<img width="660" height="478" src="img/bachema.png" class="post-image" alt="post-image">
-		<section class="post-content">
-			
-			<h1 class="post-title">BACHEMA</h1>
-			<p class="post-abstract">Bachema is a laboratory that specializes in physical-chemical and environmental microbiology analysis of water, soil, air and waste.</p>
-			<div class="post-link-c">
-				<a rel="nofollow" rel="noreferrer" href="http://www.bachema.com.br" class="post-link">VIEW WEBSITE</a>
-			</div>
-		</section>
-
-	</article>
-	<article class="post">
-		<img width="660" height="523" src="img/lulu2.png" class="post-image" alt="">
-		<section class="post-content">
-			<h1 class="post-title">Lulu Club</h1>
-			<p class="post-abstract">It's a club for saloons and beauty relates. </p>
-			<div class="post-link-c">
-				<a rel="nofollow" rel="noreferrer" href="http://luluclub.com.br/cadastro-de-estabelecimentos/" class="post-link">VIEW WEBSITE</a>
-			</div>
-		</section>
-
-	</article>
-	<article class="post">
-		<img width="660" height="478" src="img/zmb7.png" class="post-image" alt="">
-		<section class="post-content">
-			
-			<h1 class="post-title">Zoombie Lab</h1>
-			<p class="post-abstract">Branding & Redesign of my own personal brand, my agency Zoombie Lab. </p>
-			<div class="post-link-c">
-				<a rel="nofollow" rel="noreferrer" href="" class="post-link">VIEW MORE</a>
-			</div>
-		</section>
-
-	</article>
-	<article class="post">
-		<img width="660" height="478" src="http://www.sightunseen.com/content/uploads/2015/03/studio_1.jpg" class="post-image" alt="">
-		<section class="post-content">
-			
-			<h1 class="post-title">Web Design Projects</h1>
-			<p class="post-abstract">All of my layouts </p>
-			<div class="post-link-c">
-				<a rel="nofollow" rel="noreferrer" href="" class="post-link">view more</a>
-			</div>
-		</section>
-	</article>
-	
-	<article class="post">
-		<img width="660" height="523" src="http://www.sightunseen.com/content/uploads/2015/11/Brazil_Modern2.jpg" class="post-image" alt="">
-		<section class="post-content">
-			<time class="post-date">Friday 14 November, 13:00</time>
-			<h1 class="post-title">The American Design Hot List</h1>
-			<p class="post-abstract">This week we announced the 2015 American Design Hot List, Sight Unseen’s unapologetically subjective annual editorial award for the 20 names to know now in American design, presented in partnership with Herman Miller. </p>
-			<div class="post-link-c"><a rel="nofollow" rel="noreferrer"href="" class="post-link">Read more</a></div>
-		</section>
-	</article>
-
-
-	<article class="post">
 		
-	</article>
+	</div>
+
 
 </div>
+</div>
+
+	<div class="section " id="section0">
+		<div class="intro col-xs-offset-1 col-xs-10">
+			
+
+			<div class="row">
+				<div class="col-xs-6">
+
+				  <div class="boton-linea-ext">
+    <span class="linea1"></span>
+    <span class="linea2"></span>
+    <span class="linea3"></span>
+    <span class="linea4"></span>
+
+    <div class="work"> <h2>Pé com Pé </h2>
+				<p>Uma empresa de calçados infantis, com 35 anos de tradição e mercado no Brasil e exterior, agora com o projeto de loja virtual. Nesse projeto fui responsável por toda a loja virtual, desde a parte visual, como soluções para aumentar as vendas. </p>
+				<ul>
+					<li><strong>Projeto:</strong> Website</li>
+					<li><strong>Cliente:</strong> Pé com Pé</li>
+					<li><strong>Agência:</strong> A&T</li>
+					<li><strong>Função:</strong> Web Design & Front-End Development</li>
+				</ul>
+				<button>Ver mais</button> </div>
+   
+  </div>
+
+				
+				</div>
+				<div class="col-xs-6 img"><img src="img/pecompe.png" alt=""></div>
+			</div>
+
+			 
+
+
   
-</div>-->
+
+
+			
+			
+		</div>
+	</div>
+	
+
+		<div class="section " id="section1">
+		<div class="intro col-xs-offset-1 col-xs-10">
+			
+
+			<div class="row">
+				<div class="col-xs-6">
+
+				  <div class="boton-linea-ext">
+    <span class="linea1"></span>
+    <span class="linea2"></span>
+    <span class="linea3"></span>
+    <span class="linea4"></span>
+
+    <div class="work"> <h2>Zoombie Lab </h2>
+				<p>Passamos por um processo de recriação da nossa identidade visual, desenvolvemos um novo logo, para representar a Zoombie assim como a ideia que tivemos quando ela foi criada. A ideia do nome surgiu pelo gosto que temos por coisas diferentes, criativas, um pouco de influência de Thriller e ciência. E foi aí que surgiu o Laboratório Criativo, apelidado carinhosamente de Lab. Um lugar onde a gente pode testar qualquer ideia maluca que vier na cabeça. E foi do nosso laboratório que saiu o poderoso vírus da criatividade e inovação no design. O vírus zoombie, que pretende crescer e se espalhar entre ideias e pensamentos diferentes.</p>
+				<ul>
+					<li><strong>Projeto:</strong> Website</li>
+					<li><strong>Cliente:</strong> Zoombie Lab</li>
+					<li><strong>Agência:</strong> Zoombie Lab</li>
+					<li><strong>Função:</strong> Web Design & Front-End Development</li>
+				</ul>
+				<button>Ver mais</button> </div>
+   
+  </div>
+
+				
+				</div>
+				<div class="col-xs-6"><img src="img/zoombie.png" alt=""></div>
+			</div>
+
+			 
+
+
+  
+
+
+			
+			
+		</div>
+	</div>
+
+		<div class="section " id="section2">
+		<div class="intro col-xs-offset-1 col-xs-10">
+			
+
+			<div class="row">
+				<div class="col-xs-6">
+
+				  <div class="boton-linea-ext">
+    <span class="linea1"></span>
+    <span class="linea2"></span>
+    <span class="linea3"></span>
+    <span class="linea4"></span>
+
+    <div class="work"> <h2>Bachema </h2>
+				<p>Bachema is a laboratory that specializes in physical-chemical and environmental microbiology analysis of water, soil, air and waste.</p>
+				<p>We offer detailed exams of organic and inorganic compounds, microbiological and ecotoxicological, measurement of asbestos in materials, and the study of soil treatment and pilot tests for biogas and biodiesel production.</p>
+				<ul>
+					<li><strong>Projeto:</strong> Website</li>
+					<li><strong>Cliente:</strong> Bachema</li>
+					<li><strong>Agência:</strong> MOQUE.CA</li>
+					<li><strong>Função:</strong> Front-End Development</li>
+				</ul>
+				<button>Ver mais</button> </div>
+   
+  </div>
+
+				
+				</div>
+				<div class="col-xs-6 img"><img src="img/bachema.png" alt=""></div>
+			</div>
+
+			 
+
+
+  
+
+
+			
+			
+		</div>
+	</div>
+
+		<div class="section contact" id="section3">
+		<div class="intro col-xs-offset-1 col-xs-10">
+			
+
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+
+				<h2 class="ftr">Wanna talk?</h2>
+
+				<form action="" class="contact">
+					<input type="text" placeholder="Nome:">
+					<input type="email" placeholder="Email:">
+					<textarea name="message" placeholder="Mensagem:" id="" cols="30" rows="10"></textarea>
+					<input type="submit" value="SEND!">
+				</form>
+
+				
+				</div>
+			
+			</div>
+
+			 
+
+
+  
+
+
+			
+			
+		</div>
+	</div>
 </section>
 
 
-
-
-<footer><p>DESIGNED BY TÁBITA ALMEIDA</p></footer>
-
-</div>
+<footer class="footer"><p>DESIGNED BY TÁBITA ALMEIDA</p></footer>	
 </body>
 </html>
