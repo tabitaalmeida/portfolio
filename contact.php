@@ -1,43 +1,62 @@
 <?php
+require("phpmailer/class.phpmailer.php");
 
-$EmailFrom = "almeidatabita@gmail.com";
-$EmailTo = "almeidatabita@gmail.com";
-$Subject = "Nice & Simple Contact Form by CSS-Tricks";
-$Name = Trim(stripslashes($_POST['name'])); 
-$Tel = Trim(stripslashes($_POST['tel'])); 
-$Email = Trim(stripslashes($_POST['email'])); 
-$Message = Trim(stripslashes($_POST['message'])); 
+$mail = new PHPMailer();
 
-// validation
-$validationOK=true;
-if (!$validationOK) {
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
-  exit;
-}
+// Define que a mensagem será SMTP
 
-// prepare email body text
-$Body = "";
-$Body .= "Name: ";
-$Body .= $Name;
-$Body .= "\n";
-$Body .= "Tel: ";
-$Body .= $Tel;
-$Body .= "\n";
-$Body .= "Email: ";
-$Body .= $Email;
-$Body .= "\n";
-$Body .= "Message: ";
-$Body .= $Message;
-$Body .= "\n";
+$mail->IsSMTP();
 
-// send email 
-$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+// Host do servidor SMTP
 
-// redirect to success page 
-if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
-}
-else{
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+$mail->Host = "smtp.gmail.com";
+
+// Autenticação | True
+
+$mail->SMTPAuth = true;
+
+// Usuário do servidor SMTP
+
+$mail->Username = 'almeidatabita@gmail.com';
+
+// Senha da caixa postal utilizada
+
+$mail->Password = 'mac4rra0';
+
+$mail->From = "email@dominio.com.br";
+$mail->FromName = "Nome do Remetente ";
+$mail->AddAddress('almeidatabita@gmail.com', 'Tábita');
+
+// Define que o e-mail será enviado como HTML | True
+
+$mail->IsHTML(true);
+
+// Charset da mensagem (opcional)
+
+$mail->CharSet = 'iso-8859-1';
+
+// Assunto da mensagem
+
+$mail->Subject = "Mensagem Teste";
+
+// Conteúdo no corpo da mensagem
+
+$mail->Body = 'Conteudo da mensagem';
+
+// Conteúdo no corpo da mensagem(texto plano)
+
+$mail->AltBody = 'Conteudo da mensagem em texto plano';
+
+//Envio da Mensagem
+
+$enviado = $mail->Send();
+
+$mail->ClearAllRecipients();
+
+if ($enviado) {
+  echo "E-mail enviado com sucesso!";
+} else {
+  echo "Não foi possível enviar o e-mail.";
+  echo "Motivo do erro: " . $mail->ErrorInfo;
 }
 ?>
