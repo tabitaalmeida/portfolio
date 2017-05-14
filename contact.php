@@ -8,6 +8,8 @@ $email = $_POST['email'];
 $subject = $_POST['subject'];
 //pega os dados que foi digitado no ID sebject.
 
+$tel = $_POST['tel'];
+
 $message = $_POST['message'];
 //pega os dados que foi digitado no ID message.
 
@@ -20,7 +22,8 @@ cadastrado para receber o formulário*/
 $corpo = "Formulário enviado\n";
 $corpo .= "Nome: " . $name . "\n";
 $corpo .= "Email: " . $email . "\n";
-$corpo .= "Comentários: " . $message . "\n";
+$corpo .= "Mensagem: " . $message . "\n";
+$corpo .= "Telefone: " . $tel . "\n";
 
 $email_to = 'contato@tabitaalmeida.com';
 //não esqueça de substituir este email pelo seu.
