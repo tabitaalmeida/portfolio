@@ -1,62 +1,42 @@
 <?php
-require("phpmailer/class.phpmailer.php");
+$name = $_POST['name'];
+//pega os dados que foi digitado no ID name.
 
-$mail = new PHPMailer();
+$email = $_POST['email'];
+//pega os dados que foi digitado no ID email.
 
-// Define que a mensagem será SMTP
+$subject = $_POST['subject'];
+//pega os dados que foi digitado no ID sebject.
 
-$mail->IsSMTP();
+$message = $_POST['message'];
+//pega os dados que foi digitado no ID message.
 
-// Host do servidor SMTP
+$headers = "From: $email\r\n";
+$headers .= "Reply-To: $email\r\n";
 
-$mail->Host = "smtp.gmail.com";
+/*abaixo contém os dados que serão enviados para o email
+cadastrado para receber o formulário*/
 
-// Autenticação | True
+$corpo = "Formulário enviado\n";
+$corpo .= "Nome: " . $name . "\n";
+$corpo .= "Email: " . $email . "\n";
+$corpo .= "Comentários: " . $message . "\n";
 
-$mail->SMTPAuth = true;
+$email_to = 'contato@tabitaalmeida.com';
+//não esqueça de substituir este email pelo seu.
 
-// Usuário do servidor SMTP
+$status = mail($email_to, $subject, $corpo, $headers);
+//enviando o email.
 
-$mail->Username = 'almeidatabita@gmail.com';
+if ($status) {
+  echo "<script> alert('Formulário enviado com sucesso!'); </script>";
+  
+//mensagem de form enviado com sucesso.
 
-// Senha da caixa postal utilizada
-
-$mail->Password = 'mac4rra0';
-
-$mail->From = "email@dominio.com.br";
-$mail->FromName = "Nome do Remetente ";
-$mail->AddAddress('almeidatabita@gmail.com', 'Tábita');
-
-// Define que o e-mail será enviado como HTML | True
-
-$mail->IsHTML(true);
-
-// Charset da mensagem (opcional)
-
-$mail->CharSet = 'iso-8859-1';
-
-// Assunto da mensagem
-
-$mail->Subject = "Mensagem Teste";
-
-// Conteúdo no corpo da mensagem
-
-$mail->Body = 'Conteudo da mensagem';
-
-// Conteúdo no corpo da mensagem(texto plano)
-
-$mail->AltBody = 'Conteudo da mensagem em texto plano';
-
-//Envio da Mensagem
-
-$enviado = $mail->Send();
-
-$mail->ClearAllRecipients();
-
-if ($enviado) {
-  echo "E-mail enviado com sucesso!";
 } else {
-  echo "Não foi possível enviar o e-mail.";
-  echo "Motivo do erro: " . $mail->ErrorInfo;
+  echo "<script> alert('Falha ao enviar o Formulário.'); </script>";
+  
+//mensagem de erro no envio. 
+
 }
 ?>
