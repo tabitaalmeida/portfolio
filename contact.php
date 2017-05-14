@@ -106,9 +106,9 @@ if ($status) {
 
 </header>
 
-<section class="container">
+<section class="container" id="contact">
 	<div class="row">
-		<h2>Thanks for reach out! I'm going to reply you as soon as possible. </h2>
+		<h2 class="ftr">Thanks for reach out! I'm going to reply you as soon as possible. </h2>
 	</div>
 </section>
 

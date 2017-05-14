@@ -128,6 +128,10 @@ body.fp-viewing-page1 div#fp-nav {
 }
 
 
+#contact h2 {
+  color:#fff;
+}
+
 header nav {
   background-color: #1b1a25;
   position: fixed;
