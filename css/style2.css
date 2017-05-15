@@ -110,14 +110,16 @@ body.fp-viewing-page1 div#fp-nav {
 .contact input {
   background: #FFC371;
   padding:20px;
-  border:5px solid #1b1a25;
+  /*border:5px solid #1b1a25;*/
+  border:0;
   margin-bottom: 10px;
 }
 
 .contact textarea {
   background: #FFC371;
   padding:20px;
-  border:5px solid #1b1a25;
+  /*border:5px solid #1b1a25;*/
+  border:0;
 }
 
 .contact input[type="submit"] {
