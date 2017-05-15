@@ -89,7 +89,7 @@ if ($status) {
   </label>
     <nav>
     <ul class="ftr menu">
-      <li><a rel="nofollow" rel="noreferrer" href="index.html">Home</a></li>
+      <li><a rel="nofollow" rel="noreferrer" href="index.php">Home</a></li>
       <li><a rel="nofollow" rel="noreferrer" href="index.html/#section0">Work</a></li>
       <li><a rel="nofollow" rel="noreferrer" href="index.html/#section3">Contact</a></li>
     </ul>
