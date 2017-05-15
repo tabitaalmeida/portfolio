@@ -176,7 +176,7 @@
 
 				
 				</div>
-				<div class="col-xs-6"><img src="img/zoombie.png" alt=""></div>
+				<div class="col-xs-6 img"><img src="img/zoombie.png" alt=""></div>
 			</div>
 
 			 
