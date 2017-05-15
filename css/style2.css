@@ -578,6 +578,10 @@ background: linear-gradient(to right, #FF5F6D 0%, #FFC371 56%, #FF5F6D 100%);
   padding: 0px 30px;
 }
 
+#project-s img {
+  width: 100%;
+}
+
 .text {
   width: 100%;
   column-count: 1;
