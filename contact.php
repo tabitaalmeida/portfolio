@@ -91,7 +91,7 @@ if ($status) {
   </label>
     <nav>
     <ul class="ftr menu">
-      <li><a rel="nofollow" rel="noreferrer" href="#home">Home</a></li>
+     <li><a rel="nofollow" rel="noreferrer" href="http://tabitaalmeida.com/index.php#page1">Home</a></li>
       <li><a rel="nofollow" rel="noreferrer" href="http://tabitaalmeida.com/index.php#page2">Work</a></li>
       <li><a rel="nofollow" rel="noreferrer" href="http://tabitaalmeida.com/index.php#page5">Contact</a></li>
     </ul>

@@ -558,9 +558,9 @@ background: linear-gradient(to right, #FF5F6D 0%, #FFC371 56%, #FF5F6D 100%);
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px){
   .col-xs-6,.col-xs-3, .col-xs-9{
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
+    -ms-flex-preferred-size: 100% !important;
+    flex-basis: 100% !important;
+    max-width: 100% !important;
   }
 
   .img img {
@@ -570,6 +570,21 @@ background: linear-gradient(to right, #FF5F6D 0%, #FFC371 56%, #FF5F6D 100%);
 #project-s {
   padding-top: 0px;
 }
+
+.text {
+  width: 100%;
+  column-count: 1;
+  -moz-column-count: 1;
+}
+
+.header h1 {
+  font-size:2em;
+}
+
+.footer {
+  left: -73px;
+}
+
 
 }
 
