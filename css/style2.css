@@ -585,6 +585,11 @@ background: linear-gradient(to right, #FF5F6D 0%, #FFC371 56%, #FF5F6D 100%);
   left: -73px;
 }
 
+.boton-linea-ext, .boton-linea-ext2 {
+  padding: 0;
+  margin: 10px 0;
+}
+
 
 }
 
