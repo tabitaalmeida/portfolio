@@ -557,11 +557,16 @@ background: linear-gradient(to right, #FF5F6D 0%, #FFC371 56%, #FF5F6D 100%);
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px){
-  .col-xs-6,.col-xs-3, .col-xs-9, .col-xs-10{
+  .col-xs-6,.col-xs-3, .col-xs-9{
     -ms-flex-preferred-size: 100% !important;
     flex-basis: 100% !important;
     max-width: 100% !important;
   }
+
+.col-xs-10 {
+  width: 100%;
+  max-width: 100%;
+}
 
   .img img {
     width: 100%;
