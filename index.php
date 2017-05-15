@@ -56,8 +56,8 @@
     <nav>
     <ul class="ftr menu">
       <li><a rel="nofollow" rel="noreferrer" href="#home">Home</a></li>
-      <li><a rel="nofollow" rel="noreferrer" href="#section0">Work</a></li>
-      <li><a rel="nofollow" rel="noreferrer" href="#section3">Contact</a></li>
+      <li><a rel="nofollow" rel="noreferrer" href="http://tabitaalmeida.com/index.php#page2">Work</a></li>
+      <li><a rel="nofollow" rel="noreferrer" href="http://tabitaalmeida.com/index.php#page5">Contact</a></li>
     </ul>
     <ul class="social">
     	<li><a href="https://www.facebook.com/TabitaAlmeida" target="_blank"><i class="fa fa-facebook"></i></a></li>
