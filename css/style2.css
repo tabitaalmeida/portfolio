@@ -18,6 +18,10 @@ body.fp-viewing-page2 .toggle-btn .bar, body.fp-viewing-page3 .toggle-btn .bar, 
 	background: #1b1a25 !important;
 }
 
+body.fp-viewing-page5 .toggle-btn {
+      border: 1px solid #1b1a25;
+}
+
 body.fp-viewing-page1 div#fp-nav {
 	display: none !important;
 }
@@ -612,6 +616,10 @@ background: linear-gradient(to right, #FF5F6D 0%, #FFC371 56%, #FF5F6D 100%);
 
 header nav ul li a {
   font-size:1em;
+}
+
+.contact {
+  height: 100vh !important;
 }
 
 }
