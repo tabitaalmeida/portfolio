@@ -170,7 +170,7 @@
 					<li><strong>Agency:</strong> Zoombie Lab</li>
 					<li><strong>Function:</strong> Web Design & Front-End Development</li>
 				</ul>
-				<a href="zoombie.html" target="_blank"><button>SEE MORE</button></a> </div>
+				<a href="zoombie.html"><button>SEE MORE</button></a> </div>
    
   </div>
 
