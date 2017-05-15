@@ -244,6 +244,7 @@
 				<form action="contact.php" class="contact" method="post">
 					<input type="text" name="name" placeholder="Name:">
 					<input type="email" name="email" placeholder="E-mail:">
+					<input type="text" name="subject" placeholder="Subject:">
 					<input type="tel" name="tel" placeholder="Phone: ">
 					<textarea name="message" placeholder="Message:" id="" cols="30" rows="10"></textarea>
 					<input type="submit" name="submit" value="SEND">

@@ -21,9 +21,11 @@ cadastrado para receber o formulário*/
 
 $corpo = "Formulário enviado\n";
 $corpo .= "Nome: " . $name . "\n";
+$corpo .= "Assunto: " . $subject . "\n";
 $corpo .= "Email: " . $email . "\n";
 $corpo .= "Mensagem: " . $message . "\n";
 $corpo .= "Telefone: " . $tel . "\n";
+
 
 $email_to = 'contato@tabitaalmeida.com';
 //não esqueça de substituir este email pelo seu.
