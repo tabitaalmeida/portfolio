@@ -233,11 +233,14 @@
 	</div>
 
 		<div class="section contact" id="section3">
+
+		<div class="row">
+		
 		<div class="intro col-xs-offset-1 col-xs-10">
 			
 
-			<div class="row">
-				<div class="col-xs-10 col-xs-offset-1">
+			
+				
 
 				<h2 class="ftr">Wanna talk?</h2>
 
@@ -253,7 +256,7 @@
 				<h4>You can also find me in +55 11 9 72854871</h4>
 
 				
-				</div>
+				
 			
 			</div>
 
