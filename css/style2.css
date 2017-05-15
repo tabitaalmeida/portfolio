@@ -555,5 +555,20 @@ background: linear-gradient(to right, #FF5F6D 0%, #FFC371 56%, #FF5F6D 100%);
 }
 
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px){
+  .col-xs-6 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  article {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+
 
 
