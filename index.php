@@ -235,8 +235,8 @@
 		<div class="section contact" id="section3">
 
 		<div class="row">
-		
-		<div class="intro col-xs-offset-1 col-xs-10">
+
+		<div class="col-xs-offset-1 col-xs-10">
 			
 
 			
